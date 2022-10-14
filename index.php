@@ -23,7 +23,6 @@
     <details class="header-content-auth">
       <summary>Меню</summary>
         <p>
-          <p class="header-content-a"><a href="index.php">Главная</a></p>
           <p></p>
           <p class="header-content-a"><a href="Заявка/zayavka.html">Заявка</a></p>
           <p></p>
