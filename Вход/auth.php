@@ -8,11 +8,11 @@
 
     if(mb_strlen($login) < 2 || mb_strlen($login) > 15) {
         echo "Недопустимая длина Логина Min-(5) Max-(15) ";  
-        echo '<a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Login.php">Вернуться назад</a>';  
+        echo '<a href="Кино/Вход/Login.php">Вернуться назад</a>';  
         exit();
     } else if(mb_strlen($pass) < 2 || mb_strlen($pass) > 15) {
         echo "Недопустимая длина Пароля Min-(5) Max-(15) ";  
-        echo '<a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Login.php">Вернуться назад</a>';  
+        echo '<a href="Кино/Вход/Login.php">Вернуться назад</a>';  
         exit();
     }
 
@@ -24,7 +24,7 @@
     $user = $result->fetch_assoc();
     if(count($user) == 0) {
         echo "Логин или Пароль не верный ";
-        echo '<a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Login.php">Вернуться назад</a>';  
+        echo '<a href="Кино/Вход/Login.php">Вернуться назад</a>';  
         exit();
     }
 

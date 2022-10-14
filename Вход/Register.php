@@ -22,9 +22,9 @@
     <details class="header-content-auth">
       <summary>Меню</summary>
         <p>
-          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/index.php">Главная</a></p>
+          <p class="header-content-a"><a href="Кино/index.php">Главная</a></p>
           <p></p>
-          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Заявка/zayavka.html">Заявка</a></p>
+          <p class="header-content-a"><a href="Кино/Заявка/zayavka.html">Заявка</a></p>
           <p></p>
           
           <div class="header-content-кино">
@@ -45,17 +45,17 @@
       ?>
       <summary>Аккаунт</summary>
         <p>
-          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Login.php">Авторизация</a></p>
+          <p class="header-content-a"><a href="Кино/Вход/Login.php">Авторизация</a></p>
           <p></p>
           или
           <p></p>
-          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Register.php">Регистрация</a></p>
+          <p class="header-content-a"><a href="Кино/Вход/Register.php">Регистрация</a></p>
         </p>
 
       <?php else:?>
       <summary><?=$_COOKIE['user']?></summary>
         <p>
-          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/exit.php">Выход</a></p>
+          <p class="header-content-a"><a href="Кино/Вход/exit.php">Выход</a></p>
         </p>
       <?php endif;?>
     </details>
@@ -83,7 +83,7 @@
             <br>
             <input class="a-form-control__button" type="submit" value="Зарегистрироваться">
             <br>
-            <p><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Login.php">Авторизуйтесь</a> если есть аккаунт</p>
+            <p><a href="Кино/Вход/Login.php">Авторизуйтесь</a> если есть аккаунт</p>
         </form>
     </div>
 </div>

@@ -9,5 +9,4 @@ function buttonPrew() {
 function buttonNext() {
   counters[0].textContent = parseInt(counters[0].textContent) + 1;
   pagin = counters[0].textContent
-  print (pagin);
 }
