@@ -1,0 +1,122 @@
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  margin: 0;
+  background: no-repeat url(img/2.jpg) fixed center;
+  background-size: cover; /* Фон занимает всю доступную площадь */
+  font: 16px "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.col {
+  padding: 20px;
+}
+a {
+  color: #fff;
+}
+p {
+  color: #fff;
+}
+.form-wrapper {
+  display: flex;
+  padding: 70px;
+  align-items: center;
+  justify-content: center; 
+}
+  
+.contact-form {
+  width: 300px;
+  padding: 30px 30px;
+  background: #1c1e21;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); 
+}
+.form-control__title {
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 5px; 
+}
+.form-control {
+  height: 40px;
+  border: 1px solid #282a2e;
+  border-radius: 5px;
+  width: 100%;
+  background: url("/img/tel.svg") center left 15px no-repeat, #1c1e21;
+  background-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font: 16px "Roboto", sans-serif;
+  color: #fff;
+  transition: 0.3s; }
+.form-control:focus {
+  transition: 0.3s;
+  border: 1px solid rgba(255, 241, 198, 0.2); 
+}
+textarea {
+  resize: none;
+
+  height: 100px;
+  border: 1px solid #282a2e;
+  border-radius: 5px;
+  width: 100%;
+  background: url("/img/tel.svg") center left 15px no-repeat, #1c1e21;
+  background-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font: 16px "Roboto", sans-serif;
+  color: #fff;
+  transition: 0.3s; }
+textarea:focus {
+  transition: 0.3s;
+  border: 1px solid rgba(255, 241, 198, 0.2); 
+}
+
+.form-control__button {
+  background: #fff1c6;
+  color: black;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  margin: 10px;
+  font: 16px "Roboto", sans-serif;
+  transition: 0.3s;
+  cursor: pointer; }
+.form-control__button:hover {
+  transition: 0.3s;
+  background: #7156f3;
+  color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3); 
+} 
+
+.a-form-control__button {
+  background: #fff1c6;
+  color: black;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font: 16px "Roboto", sans-serif;
+  transition: 0.3s;
+  cursor: pointer; }
+.a-form-control__button:hover {
+  transition: 0.3s;
+  background: #7156f3;
+  color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}

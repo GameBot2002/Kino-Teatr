@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="Компьютер.css">
+  <link rel="stylesheet" href="Мобильный.css">
+  <link rel="stylesheet" href="header.css">
+
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+
+  <script src="Масив.js"></script>
+  <script src="js.js"></script>
+  <meta name="author" content="Кулаков Анатолий" />
+  <meta name="copyright" content="https://smartlanding.biz/otpravka-dannyx-formy-v-telegram.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Кино-театр</title>
+</head>
+<body>
+  <header class="pc_web">
+    <details class="header-content-auth">
+      <summary>Меню</summary>
+        <p>
+          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/index.php">Главная</a></p>
+          <p></p>
+          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Заявка/zayavka.html">Заявка</a></p>
+          <p></p>
+          
+          <div class="header-content-кино">
+
+            <p class="header-content-a">Lvl 1: <a href="Кино-расписание/inde.html">Кино по Расписание</a></p>
+            <p></p>
+            <p class="header-content-a">Lvl 2: <a href="Кино-рандом/index.html">Кино Рандом</a></p>
+            <p></p>
+            <p class="header-content-a">Lvl 3: <a href="Кино/index.html">Кино Библиотека</a></p>
+            <p></p>
+
+          </div>
+        </p>
+    </details>
+    
+    <details class="header-content-auth">
+      <?php
+        if($_COOKIE['user'] == ''):
+      ?>
+      <summary>Аккаунт</summary>
+        <p>
+          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Login.php">Авторизация</a></p>
+          <p></p>
+          или
+          <p></p>
+          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/Register.php">Регистрация</a></p>
+        </p>
+
+      <?php else:?>
+      <summary><?=$_COOKIE['user']?></summary>
+        <p>
+          <p class="header-content-a"><a href="https://tolia-kulakov-2002.000webhostapp.com/Кино/Вход/exit.php">Выход</a></p>
+        </p>
+      <?php endif;?>
+    </details>
+  </header>
+
+  <div class="content">
+    <div class="random_ID">
+      <button onclick="random(), openModal(id)" class="button">Рандом</button>
+      <p class="button">ID: <span id="ran">0000000</span></p>
+    </div>
+
+
+
+
+
+    <div class="modal">
+      <div class="modal__card">
+        <img class="modal__movie-backdrop" src="#" alt="">
+        <h2>
+          <span class="modal__movie-title">(Название)</span>
+          <span class="modal__movie-release-year"> - (Год)</span>
+        </h2>
+        <ul class="modal__movie-info">
+          <li class="modal__movie-genre">Жанр - (Жанры)</li>
+          <li class="modal__movie-runtime">Время - (00) минут</li>
+          <li >Сайт: <a class="modal__movie-site" href="#">(КиноПоиск)</a></li>
+          <li class="modal__movie-overview">Описание - (Описание)</li>
+        </ul>
+        <details class="kino">
+          <summary>Смотреть</summary>
+        </details>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <div id="kinoplayertop" data-shearch="false" data-kinopoisk="2000102"></div>
+    <script src="https://kinoplayer.top/top.js"></script>
+
+  </div>
+
+</body>
+</html>

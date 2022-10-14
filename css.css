@@ -1,0 +1,13 @@
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  margin: 0;
+  background: no-repeat url(img/1.jpg) fixed right;
+  background-size: cover; /* Фон занимает всю доступную площадь */
+  font: 16px "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box; }
